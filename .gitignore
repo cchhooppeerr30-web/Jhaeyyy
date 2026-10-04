@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Keep the public Aiven CA certificate; ignore private TLS credentials.
+/app/certs/*
+!/app/certs/.gitkeep
+!/app/certs/ca.pem
+
+# Dependencies
+vendor/
+app/vendor/
+composer.lock
+
+# Cache & Logs
+runtime/*
+!runtime/.htaccess
+!runtime/index.html
+*.log
+*.cache
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# OS
+Thumbs.db
+# Debug / proof artifacts
+inspect_*.php
+probe_*.php
+test_*.php
+verify_*.php
+debug_*.php
+localhost_*.html
+local_*.html
+local_*.*
+remote_*.html
+remote_*.*
+render_*.html
+cookies.txt
+Januarrr/
